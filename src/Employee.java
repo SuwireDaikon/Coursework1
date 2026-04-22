@@ -6,6 +6,7 @@ public class Employee {
     private String lastName;
     private int department;
     private int salary;
+    private static int id;
 
     public Employee(String firstName, String surname, String lastName, int department, int salary) {
         this.firstName = firstName;
@@ -14,6 +15,7 @@ public class Employee {
         this.department = department;
         this.salary = salary; // 50-450
     }
+    //static int id;
 
     public String getFirstName() {
         return firstName;
@@ -35,6 +37,13 @@ public class Employee {
         return salary;
     }
 
-    static int id;
+    public void setDepartment(int department) {
+        this.department = department;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
 
 }
